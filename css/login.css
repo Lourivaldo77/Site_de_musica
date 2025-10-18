@@ -1,0 +1,96 @@
+/* Estilos específicos para a página de login */
+:root {
+    --bg-color: #0f1724; /* fundo escuro */
+    --card-bg: rgba(255, 255, 255, 0.06);
+    --accent: #4CAF50;
+    --text: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(180deg, #0b1220 0%, #0f1724 100%);
+    color: var(--text);
+}
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(2,6,23,0.6);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+}
+
+.login-card h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.login-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.login-card label {
+    font-size: 0.9rem;
+}
+
+.login-card input[type="email"],
+.login-card input[type="password"] {
+    padding: 0.9rem 1rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.02);
+    color: var(--text);
+    outline: none;
+}
+
+.login-card input::placeholder {
+    color: rgba(255,255,255,0.5);
+}
+
+.btn-submit {
+    margin-top: 0.5rem;
+    padding: 0.9rem 1rem;
+    border-radius: 999px;
+    background: var(--accent);
+    color: white;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+}
+
+.links a {
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+}
+
+@media (max-width: 480px) {
+    .login-card { padding: 1.25rem; }
+    .login-card h2 { font-size: 1.25rem; }
+}
