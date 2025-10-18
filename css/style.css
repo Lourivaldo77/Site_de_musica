@@ -1,0 +1,124 @@
+/* Reset básico e configurações globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff; /* Cor do texto principal será branca para contrastar com o fundo */
+}
+
+/* Contêiner principal que ocupa toda a tela */
+.main-container {
+    /* Imagem de fundo */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/silivan-munguarakarama-NrR9gn3lFKU-unsplash.jpg');
+    
+    /* Configurações da imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir todo o espaço */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    
+    position: relative; /* Necessário para posicionar o vídeo e a sobreposição */
+    height: 100vh; /* Ocupa 100% da altura da tela */
+    
+    /* Usando Flexbox para centralizar o conteúdo vertical e horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; /* Garante que o vídeo não ultrapasse os limites */
+}
+
+/* Sobreposição escura para garantir a legibilidade do texto */
+.main-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1; /* Fica acima do vídeo, mas abaixo do conteúdo */
+}
+
+.content h1 {
+    font-size: 3.5rem; /* Tamanho grande para o título */
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+}
+
+/* Posiciona o conteúdo acima da sobreposição */
+.content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Estilos para o vídeo de fundo */
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0; /* Fica atrás de tudo */
+    object-fit: cover; /* Garante que o vídeo cubra todo o espaço */
+}
+
+/* Agrupador de botões */
+.button-group {
+    display: flex;
+    gap: 1rem; /* Espaço entre os botões */
+    justify-content: center;
+}
+
+/* Estilo base para ambos os botões */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 50px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease; /* Efeito suave de transição */
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+/* Estilo específico para o botão de Login */
+.btn-login {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+}
+
+.btn-login:hover {
+    background-color: #45a049;
+    transform: translateY(-3px); /* Efeito de "levantar" ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Estilo específico para o botão de Cadastro */
+.btn-cadastro {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-cadastro:hover {
+    background-color: white;
+    color: #333;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
