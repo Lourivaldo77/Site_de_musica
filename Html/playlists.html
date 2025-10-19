@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlists - MusicApp</title>
+    <link rel="stylesheet" href="../css/playlists.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <header class="cabecalho-app">
+        <a href="app_principal.html" class="logo">MusicApp</a>
+        <nav class="menu-navegacao">
+            <ul>
+                <li><a href="app_principal.html">Início</a></li>
+                <li><a href="biblioteca.html">Biblioteca</a></li>
+                <li><a href="playlists.html" class="ativo">Playlists</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="#"><i class="ph ph-dots-three-outline-vertical"></i> Mais</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="playlists-container">
+        <section class="secao-playlists">
+            <h1 class="titulo-principal">Suas Playlists</h1>
+            <div class="acoes">
+                <button class="btn btn-primary"><i class="ph ph-plus"></i> Nova Playlist</button>
+                <button class="btn btn-ghost"><i class="ph ph-shuffle"></i> Aleatório</button>
+            </div>
+            <div class="grid-playlists">
+                <a class="card-playlist" href="#">
+                    <img src="https://placehold.co/300x300/1DB954/white?text=Hits" alt="Playlist Hits">
+                    <div class="info">
+                        <div class="titulo">Top Hits 2025</div>
+                        <div class="subtitulo">50 músicas • Atualizada hoje</div>
+                    </div>
+                </a>
+                <a class="card-playlist" href="#">
+                    <img src="https://placehold.co/300x300/282828/white?text=Focus" alt="Playlist Focus">
+                    <div class="info">
+                        <div class="titulo">Focus & Work</div>
+                        <div class="subtitulo">40 músicas • Atualizada ontem</div>
+                    </div>
+                </a>
+                <a class="card-playlist" href="#">
+                    <img src="https://placehold.co/300x300/4CAF50/white?text=Gym" alt="Playlist Gym">
+                    <div class="info">
+                        <div class="titulo">Treino Forte</div>
+                        <div class="subtitulo">35 músicas • Atualizada 3 dias</div>
+                    </div>
+                </a>
+                <a class="card-playlist" href="#">
+                    <img src="https://placehold.co/300x300/FF5722/white?text=Party" alt="Playlist Party">
+                    <div class="info">
+                        <div class="titulo">Festa</div>
+                        <div class="subtitulo">60 músicas • Atualizada 1 semana</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="secao-playlists">
+            <h2 class="titulo-secao">Descobrir</h2>
+            <div class="grid-playlists">
+                <a class="card-playlist pequeno" href="#">
+                    <img src="https://placehold.co/200x200/1DB954/white?text=Chill" alt="Playlist Chill">
+                    <div class="info">
+                        <div class="titulo">Chill</div>
+                        <div class="subtitulo">Vibes relax</div>
+                    </div>
+                </a>
+                <a class="card-playlist pequeno" href="#">
+                    <img src="https://placehold.co/200x200/282828/white?text=Focus" alt="Playlist Focus">
+                    <div class="info">
+                        <div class="titulo">Focus</div>
+                        <div class="subtitulo">Concentração total</div>
+                    </div>
+                </a>
+                <a class="card-playlist pequeno" href="#">
+                    <img src="https://placehold.co/200x200/4CAF50/white?text=Jazz" alt="Playlist Jazz">
+                    <div class="info">
+                        <div class="titulo">Jazz</div>
+                        <div class="subtitulo">Clássicos e modernos</div>
+                    </div>
+                </a>
+                <a class="card-playlist pequeno" href="#">
+                    <img src="https://placehold.co/200x200/FF5722/white?text=Rock" alt="Playlist Rock">
+                    <div class="info">
+                        <div class="titulo">Rock</div>
+                        <div class="subtitulo">Guitarras e energia</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="secao-playlists">
+            <h2 class="titulo-secao">Recomendadas</h2>
+            <div class="lista-horizontal">
+                <a class="chip-playlist" href="#"><i class="ph ph-heart"></i> Para Você</a>
+                <a class="chip-playlist" href="#"><i class="ph ph-trend-up"></i> Em Alta</a>
+                <a class="chip-playlist" href="#"><i class="ph ph-sun"></i> Manhã</a>
+                <a class="chip-playlist" href="#"><i class="ph ph-moon"></i> Noite</a>
+                <a class="chip-playlist" href="#"><i class="ph ph-music-notes"></i> Mix Diário</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

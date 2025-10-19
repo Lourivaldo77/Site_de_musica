@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - MusicApp</title>
+    <!-- Inclui o CSS principal da aplicação -->
+    <link rel="stylesheet" href="/css/pagina_principal.css">
+    <!-- Importa a fonte Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- Ícone para o menu (Ex: Phosphor Icons) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <!-- Container que envolve toda a interface do aplicativo -->
+    <div class="container-app">
+        
+        <!-- CABEÇALHO/BARRA DE NAVEGAÇÃO SUPERIOR -->
+        <header class="cabecalho-app">
+            <!-- Logo do aplicativo -->
+            <a href="app_principal.html" class="logo">MusicApp</a>
+            
+            <!-- Menu de Navegação -->
+            <nav class="menu-navegacao">
+                <ul>
+                    <!-- O link atual está com a classe 'ativo' -->
+                    <li><a href="app_principal.html" class="ativo">Início</a></li>
+                    <li><a href="biblioteca.html">Biblioteca</a></li>
+                    <li><a href="playlists.html">Playlists</a></li>
+                    <li><a href="perfil.html">Perfil</a></li>
+                    <!-- Ícone de Opções/Mais -->
+                    <li><a href="#"><i class="ph ph-dots-three-outline-vertical"></i> Mais</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- CONTEÚDO PRINCIPAL DA PÁGINA INICIAL -->
+        <main class="conteudo-principal">
+            
+            <!-- SEÇÃO: MÚSICAS EM ALTA -->
+            <section class="secao-musicas">
+                <h2 class="titulo-secao">Músicas em Alta</h2>
+                <!-- Lista de cards de música (rolagem horizontal) -->
+                <div class="lista-cards">
+                    <!-- Card 1 -->
+                    <a href="#" class="card-musica">
+                        <img src="https://placehold.co/180x180/1DB954/white?text=Top+1" alt="Capa da Música Top 1" class="imagem-card">
+                        <div class="titulo-card">Ritmo da Noite</div>
+                        <div class="subtitulo-card">Artista Famoso</div>
+                    </a>
+                    <!-- Card 2 -->
+                    <a href="#" class="card-musica">
+                        <img src="https://placehold.co/180x180/282828/white?text=Top+2" alt="Capa da Música Top 2" class="imagem-card">
+                        <div class="titulo-card">Melodia Perdida</div>
+                        <div class="subtitulo-card">A Banda</div>
+                    </a>
+                    <!-- Card 3 -->
+                    <a href="#" class="card-musica">
+                        <img src="https://placehold.co/180x180/505050/white?text=Top+3" alt="Capa da Música Top 3" class="imagem-card">
+                        <div class="titulo-card">O Segredo</div>
+                        <div class="subtitulo-card">Cantora Solo</div>
+                    </a>
+                    <!-- Card 4 -->
+                    <a href="#" class="card-musica">
+                        <img src="https://placehold.co/180x180/1DB954/black?text=Top+4" alt="Capa da Música Top 4" class="imagem-card">
+                        <div class="titulo-card">Vibrações</div>
+                        <div class="subtitulo-card">DJ Remix</div>
+                    </a>
+                    <!-- Card 5 -->
+                    <a href="#" class="card-musica">
+                        <img src="https://placehold.co/180x180/282828/white?text=Top+5" alt="Capa da Música Top 5" class="imagem-card">
+                        <div class="titulo-card">Horizonte</div>
+                        <div class="subtitulo-card">Dueto</div>
+                    </a>
+                    <!-- Adicionar mais cards conforme necessário -->
+                    <a href="#" class="card-musica">
+                        <img src="https://placehold.co/180x180/505050/white?text=Mais" alt="Capa da Música Top 6" class="imagem-card">
+                        <div class="titulo-card">Outra Música</div>
+                        <div class="subtitulo-card">Outro Artista</div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- SEÇÃO: NOVOS LANÇAMENTOS -->
+            <section class="secao-musicas">
+                <h2 class="titulo-secao">Novos Lançamentos</h2>
+                <!-- Lista de cards de música (rolagem horizontal) -->
+                <div class="lista-cards">
+                    <!-- Card 1 -->
+                    <a href="#" class="card-musica">
+                        <img src="https://placehold.co/180x180/505050/white?text=Novo+1" alt="Capa do Novo Lançamento 1" class="imagem-card">
+                        <div class="titulo-card">Amanhecer</div>
+                        <div class="subtitulo-card">Artista Fresco</div>
+                    </a>
+                    <!-- Card 2 -->
+                    <a href="#" class="card-musica">
+                        <img src="https://placehold.co/180x180/1DB954/white?text=Novo+2" alt="Capa do Novo Lançamento 2" class="imagem-card">
+                        <div class="titulo-card">Digital</div>
+                        <div class="subtitulo-card">Banda Pop</div>
+                    </a>
+                    <!-- Card 3 -->
+                    <a href="#" class="card-musica">
+                        <img src="https://placehold.co/180x180/282828/white?text=Novo+3" alt="Capa do Novo Lançamento 3" class="imagem-card">
+                        <div class="titulo-card">Nostalgia</div>
+                        <div class="subtitulo-card">Cantor Clássico</div>
+                    </a>
+                    <!-- Adicionar mais cards conforme necessário -->
+                </div>
+            </section>
+
+            <!-- SEÇÃO: ARTISTAS EM DESTAQUE -->
+            <section class="secao-artistas">
+                <h2 class="titulo-secao">Artistas em Destaque</h2>
+                <!-- Lista de cards de artista (rolagem horizontal) -->
+                <div class="lista-cards">
+                    <!-- Card 1 (Artista) -->
+                    <div class="card-artista">
+                        <img src="https://placehold.co/200x200/505050/white?text=João" alt="Foto do João da Guitarra" class="imagem-artista">
+                        <div class="info-artista">
+                            <h3 class="nome-artista">João da Guitarra</h3>
+                            <p class="tipo-artista">Guitarrista</p>
+                            <button class="btn-perfil" onclick="window.location.href='perfil_artista.html?id=joao'">
+                                Ver Perfil
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Card 2 (Artista) -->
+                    <div class="card-artista">
+                        <img src="https://placehold.co/200x200/1DB954/white?text=Maria" alt="Foto da Maria Voz" class="imagem-artista">
+                        <div class="info-artista">
+                            <h3 class="nome-artista">Maria Voz</h3>
+                            <p class="tipo-artista">Cantora</p>
+                            <button class="btn-perfil" onclick="window.location.href='perfil_artista.html?id=maria'">
+                                Ver Perfil
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Card 3 (Artista) -->
+                    <div class="card-artista">
+                        <img src="https://placehold.co/200x200/282828/white?text=Rock" alt="Foto da Banda Rock" class="imagem-artista">
+                        <div class="info-artista">
+                            <h3 class="nome-artista">Banda Rock</h3>
+                            <p class="tipo-artista">Banda</p>
+                            <button class="btn-perfil" onclick="window.location.href='perfil_artista.html?id=banda'">
+                                Ver Perfil
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Card 4 (Artista) -->
+                    <div class="card-artista">
+                        <img src="https://placehold.co/200x200/4CAF50/white?text=Ana" alt="Foto da Ana Pop" class="imagem-artista">
+                        <div class="info-artista">
+                            <h3 class="nome-artista">Ana Pop</h3>
+                            <p class="tipo-artista">Cantora Pop</p>
+                            <button class="btn-perfil" onclick="window.location.href='perfil_artista.html?id=ana'">
+                                Ver Perfil
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Card 5 (Artista) -->
+                    <div class="card-artista">
+                        <img src="https://placehold.co/200x200/FF5722/white?text=Carlos" alt="Foto do Carlos DJ" class="imagem-artista">
+                        <div class="info-artista">
+                            <h3 class="nome-artista">Carlos DJ</h3>
+                            <p class="tipo-artista">DJ</p>
+                            <button class="btn-perfil" onclick="window.location.href='perfil_artista.html?id=carlos'">
+                                Ver Perfil
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- (OPCIONAL: Adicionar Reprodutor de Música Fixo no Footer) -->
+
+    </div>
+</body>
+</html>

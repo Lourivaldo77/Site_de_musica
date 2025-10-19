@@ -1,0 +1,17 @@
+/* CSS simples para a página Contato */
+:root { --bg:#0f1724; --card:rgba(255,255,255,0.06); --text:#fff; --text-2:rgba(255,255,255,0.8); --accent:#4CAF50; --border:rgba(255,255,255,0.15); }
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Montserrat',system-ui,Segoe UI,Arial,sans-serif;background:linear-gradient(180deg,#0b1220 0%,var(--bg) 100%);color:var(--text)}
+.cabecalho{display:flex;align-items:center;justify-content:space-between;padding:1rem;border-bottom:1px solid var(--border);background:rgba(0,0,0,0.2)}
+.logo{color:var(--accent);font-weight:800;text-decoration:none}
+.menu a{color:var(--text-2);text-decoration:none;margin-left:.75rem;padding:.35rem .6rem;border-radius:999px}
+.menu a.ativo,.menu a:hover{background:rgba(255,255,255,0.06);color:var(--text)}
+.container{max-width:900px;margin:0 auto;padding:1.5rem}
+.bloco{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1rem;margin:1rem 0}
+.bloco h1{font-size:1.8rem;margin-bottom:.5rem}
+.bloco p{color:var(--text-2);margin-bottom:.75rem}
+.form{display:grid;gap:.75rem}
+.form label{display:flex;flex-direction:column;color:var(--text)}
+.form input,.form textarea{margin-top:.35rem;padding:.6rem .75rem;border-radius:8px;border:1px solid var(--border);background:rgba(255,255,255,0.06);color:var(--text)}
+.form button{margin-top:.5rem;padding:.6rem 1rem;border-radius:8px;border:1px solid transparent;background:linear-gradient(135deg,var(--accent),#45a049);color:#fff;font-weight:700;cursor:pointer}
+.rodape{text-align:center;padding:1.25rem;color:var(--text-2)}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Artista - MusicApp</title>
+    <link rel="stylesheet" href="../css/perfil_artista.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <header class="cabecalho-app">
+        <a href="app_principal.html" class="logo">MusicApp</a>
+        <nav class="menu-navegacao">
+            <ul>
+                <li><a href="app_principal.html">Início</a></li>
+                <li><a href="biblioteca.html">Biblioteca</a></li>
+                <li><a href="playlists.html">Playlists</a></li>
+                <li><a href="perfil.html" class="ativo">Perfil</a></li>
+                <li><a href="#"><i class="ph ph-dots-three-outline-vertical"></i> Mais</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="artista-container">
+        <section class="hero-artista">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <img class="artista-foto" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=600&auto=format&fit=crop" alt="Foto do Artista">
+                <div class="artista-info">
+                    <h1 class="artista-nome">João da Guitarra</h1>
+                    <p class="artista-genero">Guitarrista • Rock</p>
+                    <div class="artista-metricas">
+                        <div class="metrica"><strong>1,2M</strong><span>Ouvintes Mensais</span></div>
+                        <div class="metrica"><strong>128K</strong><span>Seguidores</span></div>
+                        <div class="metrica"><strong>152</strong><span>Músicas</span></div>
+                    </div>
+                    <div class="artista-acoes">
+                        <button class="btn btn-primary"><i class="ph ph-play"></i> Reproduzir</button>
+                        <button class="btn btn-secondary"><i class="ph ph-plus"></i> Seguir</button>
+                        <button class="btn btn-ghost"><i class="ph ph-share-network"></i> Compartilhar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao-artista">
+            <h2 class="titulo-secao">Lançamentos Populares</h2>
+            <div class="grid-lancamentos">
+                <a class="card-lancamento" href="#">
+                    <img src="https://placehold.co/300x300/1DB954/white?text=Album+1" alt="Álbum 1">
+                    <div class="titulo">Ritmo da Noite</div>
+                    <div class="subtitulo">2024 • Single</div>
+                </a>
+                <a class="card-lancamento" href="#">
+                    <img src="https://placehold.co/300x300/282828/white?text=Album+2" alt="Álbum 2">
+                    <div class="titulo">Melodia Perdida</div>
+                    <div class="subtitulo">2023 • Álbum</div>
+                </a>
+                <a class="card-lancamento" href="#">
+                    <img src="https://placehold.co/300x300/505050/white?text=Album+3" alt="Álbum 3">
+                    <div class="titulo">O Segredo</div>
+                    <div class="subtitulo">2022 • EP</div>
+                </a>
+                <a class="card-lancamento" href="#">
+                    <img src="https://placehold.co/300x300/4CAF50/white?text=Album+4" alt="Álbum 4">
+                    <div class="titulo">Vibrações</div>
+                    <div class="subtitulo">2021 • Single</div>
+                </a>
+            </div>
+        </section>
+
+        <section class="secao-artista">
+            <h2 class="titulo-secao">Sobre</h2>
+            <p class="sobre-texto">
+                João da Guitarra é um guitarrista brasileiro conhecido por suas performances energéticas e
+                composições cativantes. Misturando rock clássico com elementos modernos, conquistou fãs ao redor do mundo.
+            </p>
+        </section>
+
+        <section class="secao-artista">
+            <h2 class="titulo-secao">Em Turnê</h2>
+            <div class="lista-shows">
+                <div class="show-item">
+                    <div class="show-data">24 Nov</div>
+                    <div class="show-cidade">São Paulo, BR</div>
+                    <button class="btn btn-outline">Ingressos</button>
+                </div>
+                <div class="show-item">
+                    <div class="show-data">02 Dez</div>
+                    <div class="show-cidade">Rio de Janeiro, BR</div>
+                    <button class="btn btn-outline">Ingressos</button>
+                </div>
+                <div class="show-item">
+                    <div class="show-data">15 Jan</div>
+                    <div class="show-cidade">Lisboa, PT</div>
+                    <button class="btn btn-outline">Ingressos</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
