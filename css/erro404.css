@@ -1,8 +1,40 @@
 /* CSS simples para a página 404 */
-:root { --bg:#0f1724; --text:#fff; --text-2:rgba(255,255,255,0.8); --accent:#4CAF50; }
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Montserrat',system-ui,Segoe UI,Arial,sans-serif;background:linear-gradient(180deg,#0b1220 0%,var(--bg) 100%);color:var(--text);min-height:100vh;display:grid;place-items:center}
-.centro{text-align:center;padding:2rem}
-.centro h1{font-size:5rem;line-height:1;margin-bottom:.5rem;color:var(--accent)}
-.centro p{color:var(--text-2);margin-bottom:1rem}
-.voltar{display:inline-block;text-decoration:none;color:#fff;background:linear-gradient(135deg,var(--accent),#45a049);padding:.6rem 1rem;border-radius:999px}
+:root{
+    --bg:#0f1724;
+    --card: rgba(255,255,255,0.06);
+    --accent:#4CAF50;
+    --text:#fff;
+}
+*{
+    box-sizing:border-box;
+}
+body{
+    font-family:'Montserrat',system-ui,Segoe UI,Arial,sans-serif;
+    background:linear-gradient(180deg,#0b1220 0%,var(--bg) 100%);
+    color:var(--text);
+    min-height:100vh;
+    display:grid;
+    place-items:center;
+}
+.centro{
+    text-align:center;
+    padding:2rem
+}
+.centro h1{
+    font-size:5rem;
+    line-height:1;
+    margin-bottom:.5rem;
+    color:var(--accent)
+}
+.centro p{
+    color:var(--text-2);
+    margin-bottom:1rem;
+}
+.voltar{
+    display:inline-block;
+    text-decoration:none;
+    color:#fff;
+    background:linear-gradient(135deg,var(--accent),#45a049);
+    padding:.6rem 1rem;
+    border-radius:999px
+}

@@ -10,44 +10,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar simples (apenas aparência; sem JavaScript) -->
-    <header class="cabecalho">
-        <a class="logo" href="app_principal.html">MusicApp</a>
-        <nav class="menu">
-            <a href="app_principal.html">Início</a>
-            <a href="biblioteca.html">Biblioteca</a>
-            <a href="playlists.html">Playlists</a>
-            <a class="ativo" href="sobre.html">Sobre</a>
-        </nav>
-    </header>
-
-    <!-- Conteúdo principal da página "Sobre" -->
+    <div data-include="nav"></div>
+    <script src="../js/include-nav.js"></script>
     <main class="container">
-        <!-- Título e descrição do projeto -->
+
         <section class="bloco">
             <h1>Sobre o Projeto</h1>
             <p>Este site demonstra um aplicativo de música fictício, criado com HTML5 e CSS3, focado em boas
                práticas de layout e acessibilidade básica.</p>
         </section>
 
-        <!-- Missão / Objetivos -->
         <section class="bloco">
             <h2>Missão</h2>
             <p>Facilitar a descoberta de músicas e artistas, com uma interface clara e responsiva.</p>
+            <br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed quasi aperiam iusto! Alias ad recusandae odio ullam quos saepe reprehenderit similique cum iusto cupiditate veritatis doloremque aut, deserunt iure modi?</p>
         </section>
 
-        <!-- Equipe / Créditos simples -->
         <section class="bloco">
             <h2>Créditos</h2>
             <ul>
-                <li>Design e Front-end: Equipe MusicApp</li>
-                <li>Ícones: Phosphor Icons</li>
-                <li>Imagens: Placehold e Unsplash (apenas exemplos)</li>
+                <li>Lourivaldo Gaspar</li>
+                <li>Cyntia Lopes</li>
+                <li>Edson Constantino</li>
+                <li>Emilio Custodio</li>
+                <li>Agval Lucas</li>
             </ul>
         </section>
     </main>
 
-    <!-- Rodapé simples -->
     <footer class="rodape">
         <small>Feito com HTML5 e CSS3 • Projeto de exemplo</small>
     </footer>

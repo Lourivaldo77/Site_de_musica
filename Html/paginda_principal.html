@@ -3,178 +3,305 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Início - MusicApp</title>
-    <!-- Inclui o CSS principal da aplicação -->
-    <link rel="stylesheet" href="/css/pagina_principal.css">
-    <!-- Importa a fonte Montserrat -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
-    <!-- Ícone para o menu (Ex: Phosphor Icons) -->
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Início - Mônica & Amigos</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Container que envolve toda a interface do aplicativo -->
-    <div class="container-app">
-        
-        <!-- CABEÇALHO/BARRA DE NAVEGAÇÃO SUPERIOR -->
-        <header class="cabecalho-app">
-            <!-- Logo do aplicativo -->
-            <a href="app_principal.html" class="logo">MusicApp</a>
-            
-            <!-- Menu de Navegação -->
-            <nav class="menu-navegacao">
-                <ul>
-                    <!-- O link atual está com a classe 'ativo' -->
-                    <li><a href="app_principal.html" class="ativo">Início</a></li>
-                    <li><a href="biblioteca.html">Biblioteca</a></li>
-                    <li><a href="playlists.html">Playlists</a></li>
-                    <li><a href="perfil.html">Perfil</a></li>
-                    <!-- Ícone de Opções/Mais -->
-                    <li><a href="#"><i class="ph ph-dots-three-outline-vertical"></i> Mais</a></li>
+    <div class="app-layout">
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <svg viewBox="0 0 24 24" fill="#1DB954">
+                    <circle cx="12" cy="12" r="12" fill="#1DB954"/>
+                    <path d="M8 5v14l11-7z" fill="white"/>
+                </svg>
+                <h1>Mônica & Amigos</h1>
+            </div>
+            <nav>
+                <ul class="sidebar-nav">
+                    <li><a href="/Html/home.html" class="active">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke-width="2"/>
+                            <polyline points="9 22 9 12 15 12 15 22" stroke-width="2"/>
+                        </svg>
+                        Início
+                    </a></li>
+                    <li><a href="/Html/biblioteca.html">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke-width="2"/>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke-width="2"/>
+                        </svg>
+                        Biblioteca
+                    </a></li>
+                    <li><a href="/Html/playlists.html">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <rect x="3" y="3" width="18" height="18" rx="2" stroke-width="2"/>
+                            <line x1="9" y1="9" x2="15" y2="9" stroke-width="2"/>
+                            <line x1="9" y1="15" x2="15" y2="15" stroke-width="2"/>
+                        </svg>
+                        Playlists
+                    </a></li>
+                    <li><a href="/Html/artistas.html">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke-width="2"/>
+                            <circle cx="9" cy="7" r="4" stroke-width="2"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" stroke-width="2"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" stroke-width="2"/>
+                        </svg>
+                        Artistas
+                    </a></li>
+                    <li><a href="/Html/perfil.html">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke-width="2"/>
+                            <circle cx="12" cy="7" r="4" stroke-width="2"/>
+                        </svg>
+                        Perfil
+                    </a></li>
                 </ul>
             </nav>
-        </header>
+        </aside>
 
-        <!-- CONTEÚDO PRINCIPAL DA PÁGINA INICIAL -->
-        <main class="conteudo-principal">
-            
-            <!-- SEÇÃO: MÚSICAS EM ALTA -->
-            <section class="secao-musicas">
-                <h2 class="titulo-secao">Músicas em Alta</h2>
-                <!-- Lista de cards de música (rolagem horizontal) -->
-                <div class="lista-cards">
-                    <!-- Card 1 -->
-                    <a href="#" class="card-musica">
-                        <img src="https://placehold.co/180x180/1DB954/white?text=Top+1" alt="Capa da Música Top 1" class="imagem-card">
-                        <div class="titulo-card">Ritmo da Noite</div>
-                        <div class="subtitulo-card">Artista Famoso</div>
-                    </a>
-                    <!-- Card 2 -->
-                    <a href="#" class="card-musica">
-                        <img src="https://placehold.co/180x180/282828/white?text=Top+2" alt="Capa da Música Top 2" class="imagem-card">
-                        <div class="titulo-card">Melodia Perdida</div>
-                        <div class="subtitulo-card">A Banda</div>
-                    </a>
-                    <!-- Card 3 -->
-                    <a href="#" class="card-musica">
-                        <img src="https://placehold.co/180x180/505050/white?text=Top+3" alt="Capa da Música Top 3" class="imagem-card">
-                        <div class="titulo-card">O Segredo</div>
-                        <div class="subtitulo-card">Cantora Solo</div>
-                    </a>
-                    <!-- Card 4 -->
-                    <a href="#" class="card-musica">
-                        <img src="https://placehold.co/180x180/1DB954/black?text=Top+4" alt="Capa da Música Top 4" class="imagem-card">
-                        <div class="titulo-card">Vibrações</div>
-                        <div class="subtitulo-card">DJ Remix</div>
-                    </a>
-                    <!-- Card 5 -->
-                    <a href="#" class="card-musica">
-                        <img src="https://placehold.co/180x180/282828/white?text=Top+5" alt="Capa da Música Top 5" class="imagem-card">
-                        <div class="titulo-card">Horizonte</div>
-                        <div class="subtitulo-card">Dueto</div>
-                    </a>
-                    <!-- Adicionar mais cards conforme necessário -->
-                    <a href="#" class="card-musica">
-                        <img src="https://placehold.co/180x180/505050/white?text=Mais" alt="Capa da Música Top 6" class="imagem-card">
-                        <div class="titulo-card">Outra Música</div>
-                        <div class="subtitulo-card">Outro Artista</div>
-                    </a>
-                </div>
-            </section>
-
-            <!-- SEÇÃO: NOVOS LANÇAMENTOS -->
-            <section class="secao-musicas">
-                <h2 class="titulo-secao">Novos Lançamentos</h2>
-                <!-- Lista de cards de música (rolagem horizontal) -->
-                <div class="lista-cards">
-                    <!-- Card 1 -->
-                    <a href="#" class="card-musica">
-                        <img src="https://placehold.co/180x180/505050/white?text=Novo+1" alt="Capa do Novo Lançamento 1" class="imagem-card">
-                        <div class="titulo-card">Amanhecer</div>
-                        <div class="subtitulo-card">Artista Fresco</div>
-                    </a>
-                    <!-- Card 2 -->
-                    <a href="#" class="card-musica">
-                        <img src="https://placehold.co/180x180/1DB954/white?text=Novo+2" alt="Capa do Novo Lançamento 2" class="imagem-card">
-                        <div class="titulo-card">Digital</div>
-                        <div class="subtitulo-card">Banda Pop</div>
-                    </a>
-                    <!-- Card 3 -->
-                    <a href="#" class="card-musica">
-                        <img src="https://placehold.co/180x180/282828/white?text=Novo+3" alt="Capa do Novo Lançamento 3" class="imagem-card">
-                        <div class="titulo-card">Nostalgia</div>
-                        <div class="subtitulo-card">Cantor Clássico</div>
-                    </a>
-                    <!-- Adicionar mais cards conforme necessário -->
-                </div>
-            </section>
-
-            <!-- SEÇÃO: ARTISTAS EM DESTAQUE -->
-            <section class="secao-artistas">
-                <h2 class="titulo-secao">Artistas em Destaque</h2>
-                <!-- Lista de cards de artista (rolagem horizontal) -->
-                <div class="lista-cards">
-                    <!-- Card 1 (Artista) -->
-                    <div class="card-artista">
-                        <img src="https://placehold.co/200x200/505050/white?text=João" alt="Foto do João da Guitarra" class="imagem-artista">
-                        <div class="info-artista">
-                            <h3 class="nome-artista">João da Guitarra</h3>
-                            <p class="tipo-artista">Guitarrista</p>
-                            <button class="btn-perfil" onclick="window.location.href='perfil_artista.html?id=joao'">
-                                Ver Perfil
-                            </button>
-                        </div>
+        <main class="main-content">
+            <header class="header">
+                <nav class="header-nav">
+                    <button id="menu-toggle" class="menu-toggle hidden">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <line x1="3" y1="12" x2="21" y2="12" stroke-width="2"/>
+                            <line x1="3" y1="6" x2="21" y2="6" stroke-width="2"/>
+                            <line x1="3" y1="18" x2="21" y2="18" stroke-width="2"/>
+                        </svg>
+                    </button>
+                    <a href="/Html/home.html" class="active">Início</a>
+                    <a href="/Html/biblioteca.html">Biblioteca</a>
+                    <a href="/Html/playlists.html">Playlists</a>
+                </nav>
+                <div class="header-actions">
+                    <div class="search-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="11" cy="11" r="8" stroke-width="2"/>
+                            <path d="m21 21-4.35-4.35" stroke-width="2"/>
+                        </svg>
+                        <input type="text" placeholder="O que você quer ouvir?">
                     </div>
-                    <!-- Card 2 (Artista) -->
-                    <div class="card-artista">
-                        <img src="https://placehold.co/200x200/1DB954/white?text=Maria" alt="Foto da Maria Voz" class="imagem-artista">
-                        <div class="info-artista">
-                            <h3 class="nome-artista">Maria Voz</h3>
-                            <p class="tipo-artista">Cantora</p>
-                            <button class="btn-perfil" onclick="window.location.href='perfil_artista.html?id=maria'">
-                                Ver Perfil
-                            </button>
-                        </div>
-                    </div>
-                    <!-- Card 3 (Artista) -->
-                    <div class="card-artista">
-                        <img src="https://placehold.co/200x200/282828/white?text=Rock" alt="Foto da Banda Rock" class="imagem-artista">
-                        <div class="info-artista">
-                            <h3 class="nome-artista">Banda Rock</h3>
-                            <p class="tipo-artista">Banda</p>
-                            <button class="btn-perfil" onclick="window.location.href='perfil_artista.html?id=banda'">
-                                Ver Perfil
-                            </button>
-                        </div>
-                    </div>
-                    <!-- Card 4 (Artista) -->
-                    <div class="card-artista">
-                        <img src="https://placehold.co/200x200/4CAF50/white?text=Ana" alt="Foto da Ana Pop" class="imagem-artista">
-                        <div class="info-artista">
-                            <h3 class="nome-artista">Ana Pop</h3>
-                            <p class="tipo-artista">Cantora Pop</p>
-                            <button class="btn-perfil" onclick="window.location.href='perfil_artista.html?id=ana'">
-                                Ver Perfil
-                            </button>
-                        </div>
-                    </div>
-                    <!-- Card 5 (Artista) -->
-                    <div class="card-artista">
-                        <img src="https://placehold.co/200x200/FF5722/white?text=Carlos" alt="Foto do Carlos DJ" class="imagem-artista">
-                        <div class="info-artista">
-                            <h3 class="nome-artista">Carlos DJ</h3>
-                            <p class="tipo-artista">DJ</p>
-                            <button class="btn-perfil" onclick="window.location.href='perfil_artista.html?id=carlos'">
-                                Ver Perfil
-                            </button>
-                        </div>
+                    <div class="user-menu">
+                        <div class="user-avatar">U</div>
+                        <span>Usuário</span>
                     </div>
                 </div>
-            </section>
+            </header>
 
+            <div class="content-area">
+                <section>
+                    <div class="section-header">
+                        <h2 class="section-title">Músicas em Alta</h2>
+                        <a href="/Html/biblioteca.html" class="section-link">Ver todas</a>
+                    </div>
+                    <div class="grid grid-6">
+                        <div class="music-card">
+                            <img src="/img/danny-howe-bn-D2bCvpik-unsplash.jpg" alt="Ritmo da Noite" class="music-card-image">
+                            <div class="music-card-info">
+                                <div class="music-card-title">Ritmo da Noite</div>
+                                <div class="music-card-artist">Artista Famoso</div>
+                            </div>
+                        </div>
+                        <div class="music-card">
+                            <img src="/img/dominik-scythe-cJmTXUAUBGc-unsplash.jpg" alt="Melodia Perdida" class="music-card-image">
+                            <div class="music-card-info">
+                                <div class="music-card-title">Melodia Perdida</div>
+                                <div class="music-card-artist">A Banda</div>
+                            </div>
+                        </div>
+                        <div class="music-card">
+                            <img src="/img/daniel-schludi-mbGxz7pt0jM-unsplash.jpg" alt="O Segredo" class="music-card-image">
+                            <div class="music-card-info">
+                                <div class="music-card-title">O Segredo</div>
+                                <div class="music-card-artist">Cantora Solo</div>
+                            </div>
+                        </div>
+                        <div class="music-card">
+                            <img src="/img/forlll-de-rad-0BEw18o6mWs-unsplash.jpg" alt="Vibrações" class="music-card-image">
+                            <div class="music-card-info">
+                                <div class="music-card-title">Vibrações</div>
+                                <div class="music-card-artist">DJ Remix</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section style="margin-top: 3rem;">
+                    <div class="section-header">
+                        <h2 class="section-title">Novos Lançamentos</h2>
+                        <a href="/Html/biblioteca.html" class="section-link">Ver todos</a>
+                    </div>
+                    <div class="grid grid-6">
+                        <div class="music-card">
+                            <img src="/img/images (1).jpeg" alt="Dias Melhores" class="music-card-image">
+                            <div class="music-card-info">
+                                <div class="music-card-title">Dias Melhores</div>
+                                <div class="music-card-artist">Kelson</div>
+                            </div>
+                        </div>
+                        <div class="music-card">
+                            <img src="/img/Imagine Dragons.jpg" alt="Digital" class="music-card-image">
+                            <div class="music-card-info">
+                                <div class="music-card-title">Digital</div>
+                                <div class="music-card-artist">Banda Pop</div>
+                            </div>
+                        </div>
+                        <div class="music-card">
+                            <img src="/img/images (2).jpeg" alt="UK" class="music-card-image">
+                            <div class="music-card-info">
+                                <div class="music-card-title">UK</div>
+                                <div class="music-card-artist">Central Cee</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section style="margin-top: 3rem;">
+                    <div class="section-header">
+                        <h2 class="section-title">Artistas em Destaque</h2>
+                        <a href="/Html/artistas.html" class="section-link">Ver todos</a>
+                    </div>
+                    <div class="grid grid-6">
+                        <div class="music-card">
+                            <img src="/img/images (1).jpeg" alt="Kelson Most Wanted" class="music-card-image">
+                            <div class="music-card-overlay">
+                                <a href="/Html/artista_kelson_most_wanted.html" class="btn-perfil-artista">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+                                    </svg>
+                                    Ver Perfil
+                                </a>
+                            </div>
+                            <div class="music-card-info">
+                                <div class="music-card-title">Kelson Most Wanted</div>
+                                <div class="music-card-artist">Rap Angolano</div>
+                            </div>
+                        </div>
+                        <div class="music-card">
+                            <img src="/img/images (2).jpeg" alt="Central Cee" class="music-card-image">
+                            <div class="music-card-overlay">
+                                <a href="/Html/artista_central_cee.html" class="btn-perfil-artista">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+                                    </svg>
+                                    Ver Perfil
+                                </a>
+                            </div>
+                            <div class="music-card-info">
+                                <div class="music-card-title">Central Cee</div>
+                                <div class="music-card-artist">UK Drill</div>
+                            </div>
+                        </div>
+                        <div class="music-card">
+                            <img src="/img/avatars-000701366305-hu9f0i-t1080x1080.jpg" alt="Travis Scott" class="music-card-image">
+                            <div class="music-card-overlay">
+                                <a href="/Html/artista_travis_scott.html" class="btn-perfil-artista">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+                                    </svg>
+                                    Ver Perfil
+                                </a>
+                            </div>
+                            <div class="music-card-info">
+                                <div class="music-card-title">Travis Scott</div>
+                                <div class="music-card-artist">Hip-Hop</div>
+                            </div>
+                        </div>
+                        <div class="music-card">
+                            <img src="/img/images (5).jpeg" alt="Billie Eilish" class="music-card-image">
+                            <div class="music-card-overlay">
+                                <a href="/Html/artista_billie_eilish.html" class="btn-perfil-artista">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+                                    </svg>
+                                    Ver Perfil
+                                </a>
+                            </div>
+                            <div class="music-card-info">
+                                <div class="music-card-title">Billie Eilish</div>
+                                <div class="music-card-artist">Pop Alternativo</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </main>
-
-        <!-- (OPCIONAL: Adicionar Reprodutor de Música Fixo no Footer) -->
-
     </div>
+
+    <div class="player">
+        <div class="player-track">
+            <img src="/img/images (1).jpeg" alt="Track" class="player-track-image">
+            <div class="player-track-info">
+                <div class="player-track-title">Selecione uma música</div>
+                <div class="player-track-artist">Artista</div>
+            </div>
+            <button id="like-btn" class="player-like">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke-width="2"/>
+                </svg>
+            </button>
+        </div>
+        <div class="player-controls">
+            <div class="player-buttons">
+                <button id="shuffle-btn" class="player-button" title="Embaralhar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <polyline points="16 3 21 3 21 8" stroke-width="2"/>
+                        <line x1="4" y1="20" x2="21" y2="3" stroke-width="2"/>
+                        <polyline points="21 16 21 21 16 21" stroke-width="2"/>
+                        <line x1="15" y1="15" x2="21" y2="21" stroke-width="2"/>
+                        <line x1="4" y1="4" x2="9" y2="9" stroke-width="2"/>
+                    </svg>
+                </button>
+                <button id="prev-btn" class="player-button" title="Anterior">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/>
+                    </svg>
+                </button>
+                <button id="play-pause-btn" class="player-button play-pause" title="Reproduzir">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                </button>
+                <button id="next-btn" class="player-button" title="Próxima">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/>
+                    </svg>
+                </button>
+                <button id="repeat-btn" class="player-button" title="Repetir" data-mode="off">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <polyline points="17 1 21 5 17 9" stroke-width="2"/>
+                        <path d="M3 11V9a4 4 0 0 1 4-4h14" stroke-width="2"/>
+                        <polyline points="7 23 3 19 7 15" stroke-width="2"/>
+                        <path d="M21 13v2a4 4 0 0 1-4 4H3" stroke-width="2"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="player-progress">
+                <span class="player-current-time">0:00</span>
+                <div class="progress-bar">
+                    <div class="progress-bar-fill"></div>
+                </div>
+                <span class="player-duration">0:00</span>
+            </div>
+        </div>
+        <div class="player-extra">
+            <div class="volume-control">
+                <button id="volume-btn" class="player-button" title="Volume">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+                    </svg>
+                </button>
+                <div class="volume-slider">
+                    <div class="volume-slider-fill"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/js/player.js"></script>
 </body>
 </html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorar - Mônica e os Amigos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div data-include="nav"></div>
+    <script src="../js/include-nav.js"></script>
+    <div class="min-h-screen bg-gray-900 text-white">
+        <div class="flex h-screen">
+            <!-- Sidebar -->
+            <aside class="w-64 bg-gray-850 p-6 flex flex-col" style="background:#121212;">
+                <div class="mb-8">
+                    <a href="/Html/index.html" class="text-2xl font-bold">Mônica & Amigos</a>
+                </div>
+                <nav class="flex-1">
+                    <ul class="space-y-3">
+                        <li><a href="/Html/explore.html" class="flex items-center gap-3 text-sm hover:text-green-400">Explorar</a></li>
+                        <li><a href="/Html/biblioteca.html" class="flex items-center gap-3 text-sm hover:text-green-400">Biblioteca</a></li>
+                        <li><a href="/Html/playlists.html" class="flex items-center gap-3 text-sm hover:text-green-400">Playlists</a></li>
+                        <li><a href="/Html/ranking.html" class="flex items-center gap-3 text-sm hover:text-green-400">Ranking</a></li>
+                        <li><a href="/Html/sobre.html" class="flex items-center gap-3 text-sm hover:text-green-400">Sobre</a></li>
+                    </ul>
+                </nav>
+                <div class="mt-6">
+                    <a href="/Html/login.html" class="block w-full text-center bg-green-600 py-2 rounded hover:bg-green-500">Entrar</a>
+                    <a href="/Html/cadastro.html" class="block w-full text-center mt-2 bg-transparent border border-gray-700 py-2 rounded hover:bg-gray-800">Cadastrar</a>
+                </div>
+            </aside>
+
+            <!-- Main content -->
+            <main class="flex-1 p-8 overflow-auto">
+                <header class="flex items-center justify-between mb-6">
+                    <div class="flex items-center gap-4">
+                        <h1 class="text-2xl font-semibold">Explorar</h1>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <input id="search" class="bg-gray-800 text-sm p-2 rounded w-80" placeholder="Pesquisar artistas, músicas, playlists...">
+                    </div>
+                </header>
+
+                <section class="mb-8">
+                    <h2 class="text-xl font-semibold mb-4">Destaques</h2>
+                    <div class="grid grid-cols-4 gap-4">
+                        <div class="bg-gray-800 p-4 rounded hover:scale-105 transform transition">Destaque 1</div>
+                        <div class="bg-gray-800 p-4 rounded hover:scale-105 transform transition">Destaque 2</div>
+                        <div class="bg-gray-800 p-4 rounded hover:scale-105 transform transition">Destaque 3</div>
+                        <div class="bg-gray-800 p-4 rounded hover:scale-105 transform transition">Destaque 4</div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Playlist panel (direita) -->
+            <aside id="playlist-panel" class="w-80 bg-gray-800 p-6 overflow-auto" style="background:#0f0f0f;">
+                <h3 class="text-lg font-semibold mb-4">Fila / Playlist</h3>
+                <ul id="playlist-list" class="space-y-2 text-sm">
+                    <!-- itens serão renderizados via JS -->
+                </ul>
+            </aside>
+        </div>
+
+        <!-- Player fixo inferior -->
+        <div id="player" class="fixed bottom-0 left-0 right-0 bg-gray-850 border-t border-gray-800 p-4" style="background:#181818;">
+            <div class="max-w-6xl mx-auto flex items-center justify-between gap-4">
+                <div class="flex items-center gap-4">
+                    <img id="track-art" src="" alt="art" class="w-14 h-14 object-cover rounded shadow" />
+                    <div>
+                        <div id="track-title" class="font-semibold">Nenhuma faixa</div>
+                        <div id="track-artist" class="text-sm text-gray-400">—</div>
+                    </div>
+                </div>
+
+                <div class="flex-1 px-8">
+                    <div class="flex items-center justify-center gap-4">
+                        <button id="prev-btn" class="p-2">⏮</button>
+                        <button id="play-btn" class="p-2 bg-white text-black rounded-full w-12 h-12 flex items-center justify-center">▶</button>
+                        <button id="next-btn" class="p-2">⏭</button>
+                        <button id="shuffle-btn" class="p-2" title="Shuffle">🔀</button>
+                        <button id="repeat-btn" class="p-2" title="Repeat">🔁</button>
+                    </div>
+                    <div class="mt-2">
+                        <input id="progress" type="range" min="0" max="100" value="0" class="w-full">
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <span id="current-time" class="text-xs text-gray-400">0:00</span>
+                    <input id="volume" type="range" min="0" max="1" step="0.01" value="0.8" class="w-24">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/player.js"></script>
+</body>
+</html>

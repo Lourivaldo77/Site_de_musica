@@ -3,28 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Nosso Site</title>
-    <link rel="stylesheet" href="/css/login.css">
+    <title>Entrar - Mônica & Amigos</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .auth-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: var(--spacing-lg);
+        }
+        .auth-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: var(--radius-xl);
+            padding: var(--spacing-2xl);
+            max-width: 400px;
+            width: 100%;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        .auth-logo {
+            text-align: center;
+            margin-bottom: var(--spacing-xl);
+        }
+        .auth-logo svg {
+            margin: 0 auto var(--spacing-md);
+        }
+        .auth-logo h1 {
+            font-size: var(--font-size-2xl);
+            font-weight: 700;
+        }
+        .auth-form {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-lg);
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-sm);
+        }
+        .form-group label {
+            font-size: var(--font-size-sm);
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        .form-group input {
+            padding: var(--spacing-md);
+            border-radius: var(--radius-md);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--text-primary);
+            font-size: var(--font-size-base);
+            transition: all var(--transition);
+        }
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: rgba(255, 255, 255, 0.15);
+        }
+        .form-group input::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .auth-links {
+            text-align: center;
+            margin-top: var(--spacing-lg);
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-sm);
+        }
+        .auth-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-size: var(--font-size-sm);
+            transition: color var(--transition);
+        }
+        .auth-links a:hover {
+            color: var(--text-primary);
+        }
+    </style>
 </head>
 <body>
-    <main class="login-container">
-        <div class="login-card">
-            <h2>Entrar</h2>
-            <form id="login-form" action="/Html/dashboard.html" method="get">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" placeholder="seu@exemplo.com" required>
-
-                <label for="password">Senha</label>
-                <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
-
-                <button type="submit" class="btn btn-submit">Entrar</button>
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-logo">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                    <circle cx="30" cy="30" r="30" fill="#1DB954"/>
+                    <path d="M24 20L24 40L38 30L24 20Z" fill="white"/>
+                </svg>
+                <h1>Mônica & Amigos</h1>
+            </div>
+            <form id="login-form" class="auth-form">
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" placeholder="Sua senha" required>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%; padding: var(--spacing-md);">Entrar</button>
             </form>
-
-            <div class="links">
-                <a href="/Html/cadastro.html">Criar conta</a>
+            <div class="auth-links">
+                <a href="/Html/cadastro.html">Não tem conta? Criar conta</a>
                 <a href="/Html/index.html">Voltar</a>
             </div>
         </div>
-    </main>
+    </div>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            
+            // Simple auth check
+            const users = JSON.parse(localStorage.getItem('users') || '[]');
+            const user = users.find(u => u.email === email && u.password === password);
+            
+            if (user) {
+                localStorage.setItem('currentUser', JSON.stringify(user));
+                window.location.href = '/Html/home.html';
+            } else {
+                alert('E-mail ou senha incorretos');
+            }
+        });
+    </script>
 </body>
 </html>

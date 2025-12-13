@@ -8,13 +8,13 @@
 body, html {
     height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #fff; /* Cor do texto principal será branca para contrastar com o fundo */
+    color: #fff; 
 }
 
 /* Contêiner principal que ocupa toda a tela */
 .main-container {
     /* Imagem de fundo */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/silivan-munguarakarama-NrR9gn3lFKU-unsplash.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url('/img/silivan-munguarakarama-NrR9gn3lFKU-unsplash.jpg');
     
     /* Configurações da imagem de fundo */
     background-size: cover; /* Faz a imagem cobrir todo o espaço */
@@ -108,4 +108,17 @@ body, html {
     color: #333;
     transform: translateY(-3px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Estilo específico para o botão de Artistas */
+.btn-artistas {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: 2px solid transparent;
+}
+
+.btn-artistas:hover {
+    background: linear-gradient(135deg, #764ba2, #667eea);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
 }

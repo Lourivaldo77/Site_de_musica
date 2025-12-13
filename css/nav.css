@@ -1,0 +1,26 @@
+/* nav.css - estilos do componente de navegação */
+.site-nav { font-family: 'Montserrat', Arial, Helvetica, sans-serif; }
+.site-nav .nav-bar {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:12px 20px;
+  background: #0f0f0f;
+  color: #fff;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.site-nav .nav-left { display:flex; align-items:center; gap:12px; }
+.site-nav .brand { color:#fff; text-decoration:none; font-weight:700; font-size:18px; }
+.site-nav .nav-links { display:flex; gap:10px; margin-left:8px; }
+.site-nav .nav-links a { color: rgba(255,255,255,0.85); text-decoration:none; font-size:14px; padding:6px 8px; border-radius:6px; }
+.site-nav .nav-links a:hover { color:#1db954; background: rgba(255,255,255,0.02); }
+.site-nav .nav-right { display:flex; align-items:center; gap:12px; }
+.site-nav .nav-search { padding:6px 8px; border-radius:6px; border:1px solid rgba(255,255,255,0.06); background:#121212; color:#fff; font-size:13px; }
+.site-nav .btn-login { color:#fff; text-decoration:none; padding:6px 10px; border-radius:6px; background:#1db954; font-weight:600; }
+
+/* mobile */
+@media (max-width: 760px) {
+  .site-nav .nav-links { display:none; }
+  .site-nav .nav-search { display:none; }
+  .site-nav .brand { font-size:16px; }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "monica-e-os-amigos",
+  "version": "1.0.0",
+  "description": "Plataforma de streaming musical - Arquitetura moderna e escalável",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev-server.js",
+    "build": "node scripts/build.js",
+    "lint": "eslint src/**/*.js",
+    "format": "prettier --write \"src/**/*.{js,html,css}\""
+  },
+  "keywords": [
+    "music",
+    "streaming",
+    "player"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5"
+  }
+}
+
