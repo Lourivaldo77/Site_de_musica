@@ -174,6 +174,17 @@ body {
   border-color: var(--primary);
 }
 
+.btn-outline {
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+}
+
 .welcome-features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -241,10 +252,13 @@ body {
 .sidebar-nav {
   list-style: none;
   margin-bottom: var(--spacing-xl);
+  text-align: right;
 }
 
 .sidebar-nav li {
   margin-bottom: var(--spacing-xs);
+  display: flex;
+  justify-content: flex-end;
 }
 
 .sidebar-nav a {
@@ -258,6 +272,8 @@ body {
   transition: all var(--transition);
   font-weight: 500;
   font-size: var(--font-size-base);
+  justify-content: flex-end;
+  text-align: right;
 }
 
 .sidebar-nav a:hover,
@@ -297,6 +313,8 @@ body {
   display: flex;
   gap: var(--spacing-lg);
   align-items: center;
+  justify-content: flex-end;
+  text-align: right;
 }
 
 .header-nav a {
@@ -418,7 +436,10 @@ body {
 .grid-3 { grid-template-columns: repeat(3, 1fr); }
 .grid-4 { grid-template-columns: repeat(4, 1fr); }
 .grid-5 { grid-template-columns: repeat(5, 1fr); }
-.grid-6 { grid-template-columns: repeat(6, 1fr); }
+/* .grid-6 { grid-template-columns: repeat(6, 1fr); } */
+.grid-6 {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
 
 /* Cards */
 .card {
@@ -565,6 +586,44 @@ body {
 .music-card-artist {
   font-size: var(--font-size-sm);
   color: var(--text-secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Artist Card Specific Styles */
+.artist-card {
+  background: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  transition: all var(--transition);
+  text-decoration: none;
+  color: var(--text-primary);
+  display: block;
+}
+
+.artist-card:hover {
+  background: var(--bg-tertiary);
+  transform: translateY(-4px);
+}
+
+.artist-card-image {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: var(--radius-full); /* Makes the image circular */
+  object-fit: cover;
+  margin-bottom: var(--spacing-md);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.artist-card-info {
+  text-align: center;
+}
+
+/* Player */
+.player {
+  position: fixed;
+  bottom: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -758,7 +817,7 @@ body {
     margin-left: 200px;
   }
   
-  .grid-6 { grid-template-columns: repeat(4, 1fr); }
+  /* .grid-6 { grid-template-columns: repeat(4, 1fr); } */
   .grid-5 { grid-template-columns: repeat(4, 1fr); }
   .grid-4 { grid-template-columns: repeat(3, 1fr); }
   
@@ -804,9 +863,9 @@ body {
 }
   
   .grid-4,
-  .grid-5,
-  .grid-6 {
-    grid-template-columns: repeat(2, 1fr);
+  .grid-5
+  /* .grid-6 */ {
+    grid-template-columns: repeat(2, 1fr); /* Mantido para outras grelhas, mas a .grid-6 agora é automática */
   }
   
   .player {
@@ -839,15 +898,21 @@ body {
   .user-menu span {
     display: none;
   }
+
+  .content-area {
+    padding: var(--spacing-lg);
+  }
+
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 480px) {
   .grid-2,
-  .grid-3,
-  .grid-4,
-  .grid-5,
-  .grid-6 {
-    grid-template-columns: 1fr;
+  .grid-3
+  /* .grid-4, */
+  /* .grid-5, */
+  /* .grid-6 */ {
+    grid-template-columns: 1fr; /* A .grid-6 já se ajusta para 1 coluna automaticamente */
   }
   
   .welcome-actions {
@@ -857,6 +922,10 @@ body {
   .btn-primary,
   .btn-secondary {
     width: 100%;
+  }
+
+  .content-area {
+    padding: var(--spacing-md);
   }
 }
 
@@ -1138,4 +1207,3 @@ body {
     grid-template-columns: 1fr;
   }
 }
-

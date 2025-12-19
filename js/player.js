@@ -1,7 +1,6 @@
 /**
  * Player de Música Moderno
  */
-
 import { TRACKS, formatTime } from './data.js';
 
 class MusicPlayer {
@@ -17,7 +16,7 @@ class MusicPlayer {
     this.currentTime = 0;
     this.duration = 0;
     
-    this.init();
+    document.addEventListener('DOMContentLoaded', () => this.init());
   }
 
   init() {
@@ -116,6 +115,15 @@ class MusicPlayer {
     const likeBtn = document.getElementById('like-btn');
     if (likeBtn) {
       likeBtn.addEventListener('click', () => this.toggleLike());
+    }
+
+    // Play buttons on artist pages
+    const artistPlayBtn = document.querySelector('.hero-artista .btn-primary');
+    if (artistPlayBtn) {
+      artistPlayBtn.addEventListener('click', () => {
+        const artistName = document.querySelector('.artista-nome').textContent;
+        this.playArtist(artistName);
+      });
     }
   }
 

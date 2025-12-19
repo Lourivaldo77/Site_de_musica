@@ -13,7 +13,7 @@
     <main class="container">
         <section class="bloco">
             <h1>Top 10 da Semana</h1>
-            <ol class="lista">
+            <ol class="lista" id="ranking-list">
                 <li>1— Imagine Bragons</li>
                 <li>2— Billie Alishe</li>
                 <li>3— Central Cee</li>
@@ -31,5 +31,21 @@
     <footer class="rodape">
         <small>Ranking ilustrativo (dados estáticos)</small>
     </footer>
+
+    <script type="module">
+        import { ARTISTS } from '/js/data.js';
+
+        const rankingList = document.getElementById('ranking-list');
+        if (rankingList) {
+            const topArtists = ARTISTS.slice(0, 10);
+            rankingList.innerHTML = topArtists.map((artist, index) => {
+                const artistSlug = artist.name.toLowerCase().replace(/\s+/g, '_');
+                // Apenas cria o link se a página do artista existir
+                const artistPageExists = ['kelson_most_wanted', 'central_cee', 'travis_scott', 'billie_eilish', 'imagine_dragons', 'drake', 'ariana_grande', 'post_malone', 'dua_lipa', 'ed_sheeran', 'rihanna', 'kendrick_lamar', 'bts', 'lil_tecca'].includes(artistSlug);
+                const content = `${index + 1}— ${artist.name}`;
+                return `<li>${artistPageExists ? `<a href="/Html/artista_${artistSlug}.html">${content}</a>` : content}</li>`;
+            }).join('');
+        }
+    </script>
 </body>
 </html>

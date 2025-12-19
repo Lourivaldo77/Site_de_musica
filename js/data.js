@@ -7,7 +7,7 @@ export const ARTISTS = [
     id: 'kelson',
     name: 'Kelson Most Wanted',
     genre: 'Rap Angolano',
-    image: '/img/images (1).jpeg',
+    image: '/img/descarregar (19).webp',
     followers: 128000,
     monthlyListeners: 1200000,
     tracks: 152,
@@ -47,77 +47,36 @@ export const ARTISTS = [
     bio: 'Cantora e compositora americana, vencedora de múltiplos Grammys.',
     color: '#95E1D3'
   },
-  {
-    id: 'rui-malbreezy',
-    name: 'Rui Malbreezy',
-    genre: 'Kizomba',
-    image: '/img/ab676161000051742607a984fb9cbd6c734cfb9e.jpeg',
-    followers: 850000,
-    monthlyListeners: 5000000,
-    tracks: 98,
-    bio: 'Cantor angolano de kizomba, um dos maiores nomes do gênero.',
-    color: '#F38181'
-  },
+
   {
     id: 'imagine-dragons',
     name: 'Imagine Dragons',
     genre: 'Rock Alternativo',
-    image: '/img/Imagine Dragons.jpg',
+    image: '/img/descarregar (15).webp',
     followers: 35000000,
     monthlyListeners: 60000000,
     tracks: 145,
     bio: 'Banda americana de rock alternativo, conhecida por hits mundiais.',
     color: '#AA96DA'
   },
-  {
-    id: 'xuxu-bower',
-    name: 'Xuxu Bower',
-    genre: 'Pop',
-    image: '/img/images (3).jpeg',
-    followers: 450000,
-    monthlyListeners: 2000000,
-    tracks: 56,
-    bio: 'Cantora angolana de pop, conhecida por suas melodias cativantes.',
-    color: '#FCBAD3'
-  },
-  {
-    id: 'taylor-swift',
-    name: 'Taylor Swift',
-    genre: 'Pop',
-    image: '/img/taylor-swift.jpg',
-    followers: 120000000,
-    monthlyListeners: 150000000,
-    tracks: 245,
-    bio: 'Cantora e compositora americana, uma das artistas mais vendidas da história.',
-    color: '#FFD700'
-  },
+
   {
     id: 'drake',
     name: 'Drake',
     genre: 'Hip-Hop',
-    image: '/img/drake.jpg',
+    image: '/img/descarregar (4).webp',
     followers: 150000000,
     monthlyListeners: 200000000,
     tracks: 312,
     bio: 'Rapper e cantor canadense, um dos artistas mais streamed do mundo.',
     color: '#FF6B6B'
   },
-  {
-    id: 'the-weeknd',
-    name: 'The Weeknd',
-    genre: 'R&B',
-    image: '/img/the-weeknd.jpg',
-    followers: 80000000,
-    monthlyListeners: 100000000,
-    tracks: 189,
-    bio: 'Cantor e compositor canadense, conhecido por seu estilo único de R&B.',
-    color: '#8B0000'
-  },
+
   {
     id: 'ariana-grande',
     name: 'Ariana Grande',
     genre: 'Pop',
-    image: '/img/ariana-grande.jpg',
+    image: '/img/OIP (1).webp',
     followers: 130000000,
     monthlyListeners: 160000000,
     tracks: 178,
@@ -128,7 +87,7 @@ export const ARTISTS = [
     id: 'post-malone',
     name: 'Post Malone',
     genre: 'Hip-Hop',
-    image: '/img/post-malone.jpg',
+    image: '/img/descarregar (3).webp',
     followers: 70000000,
     monthlyListeners: 90000000,
     tracks: 156,
@@ -139,7 +98,7 @@ export const ARTISTS = [
     id: 'dua-lipa',
     name: 'Dua Lipa',
     genre: 'Pop',
-    image: '/img/dua-lipa.jpg',
+    image: '/img/descarregar (24).webp',
     followers: 90000000,
     monthlyListeners: 110000000,
     tracks: 98,
@@ -150,7 +109,7 @@ export const ARTISTS = [
     id: 'ed-sheeran',
     name: 'Ed Sheeran',
     genre: 'Pop',
-    image: '/img/ed-sheeran.jpg',
+    image: '/img/OIP (17).webp',
     followers: 110000000,
     monthlyListeners: 140000000,
     tracks: 167,
@@ -161,29 +120,19 @@ export const ARTISTS = [
     id: 'rihanna',
     name: 'Rihanna',
     genre: 'Pop',
-    image: '/img/rihanna.jpg',
+    image: '/img/descarregar (5).webp',
     followers: 140000000,
     monthlyListeners: 180000000,
     tracks: 203,
     bio: 'Cantora, compositora e empresária barbadense, uma das artistas mais influentes do mundo.',
     color: '#DC143C'
   },
-  {
-    id: 'bad-bunny',
-    name: 'Bad Bunny',
-    genre: 'Reggaeton',
-    image: '/img/bad-bunny.jpg',
-    followers: 85000000,
-    monthlyListeners: 120000000,
-    tracks: 198,
-    bio: 'Cantor e rapper porto-riquenho, maior artista de reggaeton do mundo.',
-    color: '#00CED1'
-  },
+
   {
     id: 'kendrick-lamar',
     name: 'Kendrick Lamar',
     genre: 'Hip-Hop',
-    image: '/img/kendrick-lamar.jpg',
+    image: '/img/GettyImages-2196837244-cd59229199614d8da69e839d12e30909.jpg',
     followers: 60000000,
     monthlyListeners: 80000000,
     tracks: 145,
@@ -191,119 +140,87 @@ export const ARTISTS = [
     color: '#000080'
   },
   {
-    id: 'bts',
-    name: 'BTS',
-    genre: 'K-Pop',
-    image: '/img/bts.jpg',
-    followers: 100000000,
-    monthlyListeners: 130000000,
-    tracks: 267,
-    bio: 'Grupo sul-coreano de K-Pop, uma das bandas mais populares do mundo.',
-    color: '#9370DB'
+    id: 'lil-tecca',
+    name: 'Lil Tecca',
+    genre: 'Hip-Hop/Rap',
+    image: '/img/OIP (4).webp',
+    followers: 8000000,
+    monthlyListeners: 22300000,
+    tracks: 75, // Approximate
+    bio: 'Rapper americano conhecido por seu single de 2019, "Ransom".',
+    color: '#8A2BE2'
   },
-  {
-    id: 'bruno-mars',
-    name: 'Bruno Mars',
-    genre: 'Pop',
-    image: '/img/bruno-mars.jpg',
-    followers: 95000000,
-    monthlyListeners: 120000000,
-    tracks: 134,
-    bio: 'Cantor, compositor e produtor americano, vencedor de múltiplos Grammys.',
-    color: '#FFD700'
-  }
+
 ];
 
 export const TRACKS = [
   // Kelson Most Wanted
-  { id: '1', title: 'Paradoxo', artist: 'Kelson Most Wanted', album: 'Paradoxo', duration: 180, image: '/img/images (1).jpeg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3' },
-  { id: '2', title: 'Flow Real', artist: 'Kelson Most Wanted', album: 'Paradoxo', duration: 195, image: '/img/images (1).jpeg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3' },
-  { id: '3', title: 'Angola', artist: 'Kelson Most Wanted', album: 'Paradoxo', duration: 210, image: '/img/images (1).jpeg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3' },
+  { id: '1', title: 'Dias Melhores', artist: 'Kelson Most Wanted', album: 'Paradoxo', duration: 180, image: '/img/descarregar (19).webp', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3' },
   
   // Central Cee
-  { id: '4', title: 'Doja', artist: 'Central Cee', album: '23', duration: 165, image: '/img/images (2).jpeg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3' },
-  { id: '5', title: 'Obsessed With You', artist: 'Central Cee', album: '23', duration: 178, image: '/img/images (2).jpeg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3' },
-  { id: '6', title: 'Loading', artist: 'Central Cee', album: 'Wild West', duration: 192, image: '/img/images (2).jpeg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3' },
+  { id: '4', title: 'Ungratful', artist: 'Central Cee', album: '23', duration: 165, image: '/img/OIP (15).webp', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3' },
+ 
+  { id: '6', title: 'Loading', artist: 'Central Cee', album: 'Wild West', duration: 192, image: '/img/descarregar (21).webp', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3' },
   
   // Travis Scott
-  { id: '7', title: 'SICKO MODE', artist: 'Travis Scott', album: 'ASTROWORLD', duration: 312, image: '/img/avatars-000701366305-hu9f0i-t1080x1080.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3' },
+  { id: '7', title: 'SICKO MODE', artist: 'Travis Scott', album: 'ASTROWORLD', duration: 312, image: '/img/OIP (13).webp', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3' },
   { id: '8', title: 'goosebumps', artist: 'Travis Scott', album: 'Birds in the Trap', duration: 240, image: '/img/avatars-000701366305-hu9f0i-t1080x1080.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3' },
-  { id: '9', title: 'HIGHEST IN THE ROOM', artist: 'Travis Scott', album: 'HIGHEST IN THE ROOM', duration: 172, image: '/img/avatars-000701366305-hu9f0i-t1080x1080.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3' },
+  { id: '9', title: 'Utopia', artist: 'Travis Scott', album: 'HIGHEST IN THE ROOM', duration: 172, image: '/img/descarregar (20).webp', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3' },
   
   // Billie Eilish
-  { id: '10', title: 'bad guy', artist: 'Billie Eilish', album: 'WHEN WE ALL FALL ASLEEP', duration: 194, image: '/img/images (5).jpeg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3' },
-  { id: '11', title: 'bury a friend', artist: 'Billie Eilish', album: 'WHEN WE ALL FALL ASLEEP', duration: 198, image: '/img/images (5).jpeg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-11.mp3' },
-  { id: '12', title: 'when the party\'s over', artist: 'Billie Eilish', album: 'WHEN WE ALL FALL ASLEEP', duration: 196, image: '/img/images (5).jpeg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-12.mp3' },
-  
-  // Rui Malbreezy
-  { id: '13', title: 'Amor Verdadeiro', artist: 'Rui Malbreezy', album: 'Kizomba Hits', duration: 220, image: '/img/ab676161000051742607a984fb9cbd6c734cfb9e.jpeg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3' },
-  { id: '14', title: 'Saudade', artist: 'Rui Malbreezy', album: 'Kizomba Hits', duration: 215, image: '/img/ab676161000051742607a984fb9cbd6c734cfb9e.jpeg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3' },
-  
-  // Imagine Dragons
-  { id: '15', title: 'Believer', artist: 'Imagine Dragons', album: 'Evolve', duration: 204, image: '/img/Imagine Dragons.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3' },
-  { id: '16', title: 'Thunder', artist: 'Imagine Dragons', album: 'Evolve', duration: 187, image: '/img/Imagine Dragons.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3' },
-  { id: '17', title: 'Radioactive', artist: 'Imagine Dragons', album: 'Night Visions', duration: 187, image: '/img/Imagine Dragons.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3' },
-  
-  // Xuxu Bower
-  { id: '18', title: 'Amor Perfeito', artist: 'Xuxu Bower', album: 'Pop Hits', duration: 198, image: '/img/images (3).jpeg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3' },
-  { id: '19', title: 'Vida Boa', artist: 'Xuxu Bower', album: 'Pop Hits', duration: 205, image: '/img/images (3).jpeg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3' },
-  
-  // Taylor Swift
-  { id: '20', title: 'Anti-Hero', artist: 'Taylor Swift', album: 'Midnights', duration: 201, image: '/img/taylor-swift.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3' },
-  { id: '21', title: 'Shake It Off', artist: 'Taylor Swift', album: '1989', duration: 219, image: '/img/taylor-swift.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3' },
-  { id: '22', title: 'Blank Space', artist: 'Taylor Swift', album: '1989', duration: 231, image: '/img/taylor-swift.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3' },
-  
+ 
+  { id: '12', title: 'when the party\'s over', artist: 'Billie Eilish', album: 'When We All Fall Asleep, Where Do We Go?', duration: 196, image: '/img/descarregar (16).webp', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-12.mp3' },
+  { id: '48', title: 'Happier Than Ever', artist: 'Billie Eilish', album: 'Happier Than Ever', duration: 298, image: '/img/images (5).jpeg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3' },
+  { id: '49', title: 'Bad Guy (Single)', artist: 'Billie Eilish', album: 'Bad Guy', duration: 194, image: '/img/descarregar (17).webp', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3' },
+    
   // Drake
-  { id: '23', title: 'God\'s Plan', artist: 'Drake', album: 'Scorpion', duration: 198, image: '/img/drake.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3' },
-  { id: '24', title: 'In My Feelings', artist: 'Drake', album: 'Scorpion', duration: 217, image: '/img/drake.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3' },
-  { id: '25', title: 'One Dance', artist: 'Drake', album: 'Views', duration: 173, image: '/img/drake.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3' },
-  
-  // The Weeknd
-  { id: '26', title: 'Blinding Lights', artist: 'The Weeknd', album: 'After Hours', duration: 200, image: '/img/the-weeknd.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3' },
-  { id: '27', title: 'Save Your Tears', artist: 'The Weeknd', album: 'After Hours', duration: 215, image: '/img/the-weeknd.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3' },
-  { id: '28', title: 'Starboy', artist: 'The Weeknd', album: 'Starboy', duration: 230, image: '/img/the-weeknd.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3' },
+  { id: '23', title: 'God\'s Plan', artist: 'Drake', album: 'Scorpion', duration: 198, image: '/img/OIP (5).webp', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3' },
+  { id: '24', title: 'In My Feelings', artist: 'Drake', album: 'Scorpion', duration: 217, image: '/img/OIP (5).webp', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3' },
+  { id: '25', title: 'One Dance', artist: 'Drake', album: 'Views', duration: 173, image: '/img/OIP (2).webp', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3' },
+  { id: '50', title: 'Take Care', artist: 'Drake', album: 'Take Care', duration: 277, image: '/img/descarregar (10).webp', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3' },
+
+   // Imagine Dragons
+  { id: '15', title: 'Believer', artist: 'Imagine Dragons', album: 'Evolve', duration: 204, image: '/img/descarregar (15).webp', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3' },
+  { id: '16', title: 'Thunder', artist: 'Imagine Dragons', album: 'Evolve', duration: 187, image: '/img/descarregar (15).webp', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3' },
+  { id: '17', title: 'Radioactive', artist: 'Imagine Dragons', album: 'Night Visions', duration: 187, image: '/img/descarregar (15).webp', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3' },
   
   // Ariana Grande
-  { id: '29', title: '7 rings', artist: 'Ariana Grande', album: 'thank u, next', duration: 178, image: '/img/ariana-grande.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3' },
-  { id: '30', title: 'positions', artist: 'Ariana Grande', album: 'positions', duration: 172, image: '/img/ariana-grande.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-11.mp3' },
+  { id: '29', title: '7 rings', artist: 'Ariana Grande', album: 'Thank U, Next', duration: 178, image: '/img/descarregar (13).webp', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3' },
+  { id: '30', title: 'positions', artist: 'Ariana Grande', album: 'Positions', duration: 172, image: '/img/OIP (6).webp', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-11.mp3' },
+  { id: '46', title: 'we can\'t be friends (wait for your love)', artist: 'Ariana Grande', album: 'Eternal Sunshine', duration: 229, image: '/img/descarregar (12).webp', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-15.mp3' },
+  { id: '47', title: 'thank u, next', artist: 'Ariana Grande', album: 'Thank U, Next', duration: 207, image: '/img/descarregar (13).webp', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-16.mp3' },
   
   // Post Malone
-  { id: '31', title: 'Circles', artist: 'Post Malone', album: 'Hollywood\'s Bleeding', duration: 215, image: '/img/post-malone.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-12.mp3' },
-  { id: '32', title: 'Sunflower', artist: 'Post Malone', album: 'Hollywood\'s Bleeding', duration: 158, image: '/img/post-malone.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3' },
+  { id: '31', title: 'Circles', artist: 'Post Malone', album: 'Hollywood\'s Bleeding', duration: 215, image: '/img/descarregar (3).webp', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-12.mp3' },
+  { id: '32', title: 'Sunflower', artist: 'Post Malone', album: 'Hollywood\'s Bleeding', duration: 158, image: '/img/descarregar (3).webp', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3' },
   
   // Dua Lipa
-  { id: '33', title: 'Levitating', artist: 'Dua Lipa', album: 'Future Nostalgia', duration: 203, image: '/img/dua-lipa.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3' },
-  { id: '34', title: 'Don\'t Start Now', artist: 'Dua Lipa', album: 'Future Nostalgia', duration: 183, image: '/img/dua-lipa.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3' },
+  { id: '33', title: 'Levitating', artist: 'Dua Lipa', album: 'Future Nostalgia', duration: 203, image: '/img/descarregar (24).webp', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3' },
+  { id: '34', title: 'Don\'t Start Now', artist: 'Dua Lipa', album: 'Future Nostalgia', duration: 183, image: '/img/descarregar (24).webp', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3' },
   
   // Ed Sheeran
-  { id: '35', title: 'Shape of You', artist: 'Ed Sheeran', album: '÷', duration: 233, image: '/img/ed-sheeran.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3' },
-  { id: '36', title: 'Perfect', artist: 'Ed Sheeran', album: '÷', duration: 263, image: '/img/ed-sheeran.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3' },
+  { id: '35', title: 'Shape of You', artist: 'Ed Sheeran', album: '÷', duration: 233, image: '/img/OIP (17).webp', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3' },
+  { id: '36', title: 'Perfect', artist: 'Ed Sheeran', album: '÷', duration: 263, image: '/img/OIP (17).webp', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3' },
   
   // Rihanna
-  { id: '37', title: 'Umbrella', artist: 'Rihanna', album: 'Good Girl Gone Bad', duration: 276, image: '/img/rihanna.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3' },
-  { id: '38', title: 'Diamonds', artist: 'Rihanna', album: 'Unapologetic', duration: 220, image: '/img/rihanna.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3' },
-  
-  // Bad Bunny
-  { id: '39', title: 'Tití Me Preguntó', artist: 'Bad Bunny', album: 'Un Verano Sin Ti', duration: 241, image: '/img/bad-bunny.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3' },
-  { id: '40', title: 'Me Porto Bonito', artist: 'Bad Bunny', album: 'Un Verano Sin Ti', duration: 178, image: '/img/bad-bunny.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3' },
+  { id: '37', title: 'Umbrella', artist: 'Rihanna', album: 'Good Girl Gone Bad', duration: 276, image: '/img/descarregar (5).webp', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3' },
+  { id: '38', title: 'Diamonds', artist: 'Rihanna', album: 'Unapologetic', duration: 220, image: '/img/descarregar (5).webp', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3' },
   
   // Kendrick Lamar
-  { id: '41', title: 'HUMBLE.', artist: 'Kendrick Lamar', album: 'DAMN.', duration: 177, image: '/img/kendrick-lamar.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3' },
-  { id: '42', title: 'Alright', artist: 'Kendrick Lamar', album: 'To Pimp a Butterfly', duration: 219, image: '/img/kendrick-lamar.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-11.mp3' },
+  { id: '41', title: 'HUMBLE.', artist: 'Kendrick Lamar', album: 'DAMN.', duration: 177, image: '/img/GettyImages-2196837244-cd59229199614d8da69e839d12e30909.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3' },
+  { id: '42', title: 'Alright', artist: 'Kendrick Lamar', album: 'To Pimp a Butterfly', duration: 219, image: '/img/GettyImages-2196837244-cd59229199614d8da69e839d12e30909.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-11.mp3' },
   
-  // BTS
-  { id: '43', title: 'Dynamite', artist: 'BTS', album: 'BE', duration: 199, image: '/img/bts.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-12.mp3' },
-  { id: '44', title: 'Butter', artist: 'BTS', album: 'Butter', duration: 164, image: '/img/bts.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3' },
-  
-  // Bruno Mars
-  { id: '45', title: 'Uptown Funk', artist: 'Bruno Mars', album: 'Uptown Special', duration: 269, image: '/img/bruno-mars.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3' },
-  { id: '46', title: 'That\'s What I Like', artist: 'Bruno Mars', album: '24K Magic', duration: 226, image: '/img/bruno-mars.jpg', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3' }
+  // Lil Tecca
+  { id: '43', title: 'Ransom', artist: 'Lil Tecca', album: 'We Love You Tecca', duration: 131, image: '/img/OIP (4).webp', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-12.mp3' },
+  { id: '44', title: '500lbs', artist: 'Lil Tecca', album: 'TEC', duration: 144, image: '/img/OIP (4).webp', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-13.mp3' },
+  { id: '45', title: 'Lot of Me', artist: 'Lil Tecca', album: 'We Love You Tecca 2', duration: 123, image: '/img/OIP (4).webp', audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-14.mp3' },
+
 ];
 
 export const PLAYLISTS = [
   {
     id: 'playlist-1',
-    name: 'Top Hits 2024',
+    name: 'Top Hits 2025',
     description: 'As músicas mais tocadas agora',
     image: '/img/danny-howe-bn-D2bCvpik-unsplash.jpg',
     tracks: TRACKS.slice(0, 10),
@@ -314,7 +231,7 @@ export const PLAYLISTS = [
     id: 'playlist-2',
     name: 'Rap Angolano',
     description: 'Os melhores do rap angolano',
-    image: '/img/images (1).jpeg',
+    image: '/img/descarregar (19).webp',
     tracks: TRACKS.filter(t => t.artist === 'Kelson Most Wanted'),
     owner: 'Mônica & Amigos',
     public: true
@@ -341,7 +258,7 @@ export const PLAYLISTS = [
     id: 'playlist-5',
     name: 'Hip-Hop Mundial',
     description: 'Os melhores do hip-hop',
-    image: '/img/drake.jpg',
+    image: '/img/OIP (5).webp',
     tracks: TRACKS.filter(t => ['Drake', 'Travis Scott', 'Kendrick Lamar', 'Post Malone'].includes(t.artist)),
     owner: 'Mônica & Amigos',
     public: true
@@ -371,4 +288,3 @@ export function getTracksByArtist(artistId) {
   const artist = getArtistById(artistId);
   return artist ? TRACKS.filter(t => t.artist === artist.name) : [];
 }
-
