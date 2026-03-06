@@ -3,98 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explorar - Mônica e os Amigos</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/css/style.css">
+    <title>Explorar - Mônica & Amigos</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div data-include="nav"></div>
-    <script src="../js/include-nav.js"></script>
-    <div class="min-h-screen bg-gray-900 text-white">
-        <div class="flex h-screen">
-            <!-- Sidebar -->
-            <aside class="w-64 bg-gray-850 p-6 flex flex-col" style="background:#121212;">
-                <div class="mb-8">
-                    <a href="/Html/index.html" class="text-2xl font-bold">Mônica & Amigos</a>
-                </div>
-                <nav class="flex-1">
-                    <ul class="space-y-3">
-                        <li><a href="/Html/home.html" class="flex items-center gap-3 text-sm hover:text-green-400">Início</a></li>
-                        <li><a href="/Html/biblioteca.html" class="flex items-center gap-3 text-sm hover:text-green-400">Biblioteca</a></li>
-                        <li><a href="/Html/playlists.html" class="flex items-center gap-3 text-sm hover:text-green-400">Playlists</a></li>
-                        <li><a href="/Html/ranking.html" class="flex items-center gap-3 text-sm hover:text-green-400">Ranking</a></li>
-                        <li><a href="/Html/sobre.html" class="flex items-center gap-3 text-sm hover:text-green-400">Sobre</a></li>
-                    </ul>
+    <div class="app-layout">
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <svg viewBox="0 0 24 24" fill="#1DB954">
+                    <circle cx="12" cy="12" r="12" fill="#1DB954"/>
+                    <path d="M8 5v14l11-7z" fill="white"/>
+                </svg>
+                <h1>Mônica & Amigos</h1>
+            </div>
+            <nav>
+                <ul class="sidebar-nav">
+                    <li><a href="/Html/home.html">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke-width="2"/>
+                            <polyline points="9 22 9 12 15 12 15 22" stroke-width="2"/>
+                        </svg>
+                        Início
+                    </a></li>
+                    <li><a href="/Html/biblioteca.html">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke-width="2"/>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke-width="2"/>
+                        </svg>
+                        Biblioteca
+                    </a></li>
+                    <li><a href="/Html/playlists.html">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <rect x="3" y="3" width="18" height="18" rx="2" stroke-width="2"/>
+                            <line x1="9" y1="9" x2="15" y2="9" stroke-width="2"/>
+                            <line x1="9" y1="15" x2="15" y2="15" stroke-width="2"/>
+                        </svg>
+                        Playlists
+                    </a></li>
+                    <li><a href="/Html/artistas.html">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke-width="2"/>
+                            <circle cx="9" cy="7" r="4" stroke-width="2"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" stroke-width="2"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" stroke-width="2"/>
+                        </svg>
+                        Artistas
+                    </a></li>
+                    <li><a href="/Html/perfil.html">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke-width="2"/>
+                            <circle cx="12" cy="7" r="4" stroke-width="2"/>
+                        </svg>
+                        Perfil
+                    </a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <nav class="header-nav">
+                    <button id="menu-toggle" class="menu-toggle hidden">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <line x1="3" y1="12" x2="21" y2="12" stroke-width="2"/>
+                            <line x1="3" y1="6" x2="21" y2="6" stroke-width="2"/>
+                            <line x1="3" y1="18" x2="21" y2="18" stroke-width="2"/>
+                        </svg>
+                    </button>
+                    <a href="/Html/home.html">Início</a>
+                    <a href="/Html/biblioteca.html">Biblioteca</a>
+                    <a href="/Html/playlists.html">Playlists</a>
                 </nav>
-                <div class="mt-6">
-                    <a href="/Html/login.html" class="block w-full text-center bg-green-600 py-2 rounded hover:bg-green-500">Entrar</a>
-                    <a href="/Html/cadastro.html" class="block w-full text-center mt-2 bg-transparent border border-gray-700 py-2 rounded hover:bg-gray-800">Cadastrar</a>
+                <div class="header-actions">
+                    <div class="search-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="11" cy="11" r="8" stroke-width="2"/>
+                            <path d="m21 21-4.35-4.35" stroke-width="2"/>
+                        </svg>
+                        <input type="text" placeholder="O que você quer ouvir?">
+                    </div>
+                    <div class="user-menu">
+                        <div class="user-avatar">U</div>
+                        <span>Usuário</span>
+                    </div>
                 </div>
-            </aside>
+            </header>
 
-            <!-- Main content -->
-            <main class="flex-1 p-8 overflow-auto">
-                <header class="flex items-center justify-between mb-6">
-                    <div class="flex items-center gap-4">
-                        <h1 class="text-2xl font-semibold">Explorar</h1>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <input id="search" class="bg-gray-800 text-sm p-2 rounded w-80" placeholder="Pesquisar artistas, músicas, playlists...">
-                    </div>
-                </header>
+            <div class="content-area">
+                <div class="section-header">
+                    <h1 class="section-title">Explorar</h1>
+                </div>
 
-                <section class="mb-8">
-                    <h2 class="text-xl font-semibold mb-4">Destaques</h2>
-                    <div class="grid grid-cols-4 gap-4">
-                        <div class="bg-gray-800 p-4 rounded hover:scale-105 transform transition">Destaque 1</div>
-                        <div class="bg-gray-800 p-4 rounded hover:scale-105 transform transition">Destaque 2</div>
-                        <div class="bg-gray-800 p-4 rounded hover:scale-105 transform transition">Destaque 3</div>
-                        <div class="bg-gray-800 p-4 rounded hover:scale-105 transform transition">Destaque 4</div>
+                <!-- Gêneros Musicais -->
+                <section style="margin-top: 2rem;">
+                    <h2 class="section-title" style="font-size: 1.25rem; margin-bottom: 1rem;">Gêneros Musicais</h2>
+                    <div class="grid grid-4">
+                        <a href="/Html/artistas.html" class="card" style="background: linear-gradient(135deg, #1DB954, #1ed760); text-align: center; padding: 2rem;">
+                            <span style="font-size: 1.5rem; font-weight: 700;">Pop</span>
+                        </a>
+                        <a href="/Html/artistas.html" class="card" style="background: linear-gradient(135deg, #FF6B6B, #ff8e8e); text-align: center; padding: 2rem;">
+                            <span style="font-size: 1.5rem; font-weight: 700;">Hip-Hop</span>
+                        </a>
+                        <a href="/Html/artistas.html" class="card" style="background: linear-gradient(135deg, #4ECDC4, #7ee8e1); text-align: center; padding: 2rem;">
+                            <span style="font-size: 1.5rem; font-weight: 700;">Rock</span>
+                        </a>
+                        <a href="/Html/artistas.html" class="card" style="background: linear-gradient(135deg, #AA96DA, #c4b5eb); text-align: center; padding: 2rem;">
+                            <span style="font-size: 1.5rem; font-weight: 700;">Kizomba</span>
+                        </a>
                     </div>
                 </section>
-            </main>
 
-            <!-- Playlist panel (direita) -->
-            <aside id="playlist-panel" class="w-80 bg-gray-800 p-6 overflow-auto" style="background:#0f0f0f;">
-                <h3 class="text-lg font-semibold mb-4">Fila / Playlist</h3>
-                <ul id="playlist-list" class="space-y-2 text-sm">
-                    <!-- itens serão renderizados via JS -->
-                </ul>
-            </aside>
+                <!-- Artistas em Destaque -->
+                <section style="margin-top: 3rem;">
+                    <div class="section-header">
+                        <h2 class="section-title" style="font-size: 1.25rem;">Artistas em Destaque</h2>
+                        <a href="/Html/artistas.html" class="section-link">Ver todos</a>
+                    </div>
+                    <div class="grid grid-6">
+                        <a href="/Html/artista_drake.html" class="artist-card">
+                            <img src="/img/descarregar (4).webp" alt="Drake" class="artist-card-image">
+                            <div class="artist-card-info">
+                                <div class="music-card-title">Drake</div>
+                                <div class="music-card-artist">Hip-Hop</div>
+                            </div>
+                        </a>
+                        <a href="/Html/artista_central_cee.html" class="artist-card">
+                            <img src="/img/images (2).jpeg" alt="Central Cee" class="artist-card-image">
+                            <div class="artist-card-info">
+                                <div class="music-card-title">Central Cee</div>
+                                <div class="music-card-artist">UK Drill</div>
+                            </div>
+                        </a>
+                        <a href="/Html/artista_billie_eilish.html" class="artist-card">
+                            <img src="/img/images (5).jpeg" alt="Billie Eilish" class="artist-card-image">
+                            <div class="artist-card-info">
+                                <div class="music-card-title">Billie Eilish</div>
+                                <div class="music-card-artist">Pop</div>
+                            </div>
+                        </a>
+                        <a href="/Html/artista_kendrick_lamar.html" class="artist-card">
+                            <img src="/img/GettyImages-2196837244-cd59229199614d8da69e839d12e30909.jpg" alt="Kendrick Lamar" class="artist-card-image">
+                            <div class="artist-card-info">
+                                <div class="music-card-title">Kendrick Lamar</div>
+                                <div class="music-card-artist">Hip-Hop</div>
+                            </div>
+                        </a>
+                        <a href="/Html/Lil_Tecca.html" class="artist-card">
+                            <img src="/img/OIP (4).webp" alt="Lil Tecca" class="artist-card-image">
+                            <div class="artist-card-info">
+                                <div class="music-card-title">Lil Tecca</div>
+                                <div class="music-card-artist">Hip-Hop</div>
+                            </div>
+                        </a>
+                        <a href="/Html/artista_kelson_most_wanted.html" class="artist-card">
+                            <img src="/img/descarregar (19).webp" alt="Kelson Most Wanted" class="artist-card-image">
+                            <div class="artist-card-info">
+                                <div class="music-card-title">Kelson Most Wanted</div>
+                                <div class="music-card-artist">Rap Angolano</div>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Player -->
+    <div class="player">
+        <div class="player-track">
+            <img src="/img/images (1).jpeg" alt="Track" class="player-track-image">
+            <div class="player-track-info">
+                <div class="player-track-title">Selecione uma música</div>
+                <div class="player-track-artist">Artista</div>
+            </div>
+            <button id="like-btn" class="player-like">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke-width="2"/>
+                </svg>
+            </button>
         </div>
-
-        <!-- Player fixo inferior -->
-        <div id="player" class="fixed bottom-0 left-0 right-0 bg-gray-850 border-t border-gray-800 p-4" style="background:#181818;">
-            <div class="max-w-6xl mx-auto flex items-center justify-between gap-4">
-                <div class="flex items-center gap-4">
-                    <img id="track-art" src="" alt="art" class="w-14 h-14 object-cover rounded shadow" />
-                    <div>
-                        <div id="track-title" class="font-semibold">Nenhuma faixa</div>
-                        <div id="track-artist" class="text-sm text-gray-400">—</div>
-                    </div>
+        <div class="player-controls">
+            <div class="player-buttons">
+                <button id="shuffle-btn" class="player-button" title="Embaralhar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <polyline points="16 3 21 3 21 8" stroke-width="2"/>
+                        <line x1="4" y1="20" x2="21" y2="3" stroke-width="2"/>
+                        <polyline points="21 16 21 21 16 21" stroke-width="2"/>
+                        <line x1="15" y1="15" x2="21" y2="21" stroke-width="2"/>
+                        <line x1="4" y1="4" x2="9" y2="9" stroke-width="2"/>
+                    </svg>
+                </button>
+                <button id="prev-btn" class="player-button" title="Anterior">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/>
+                    </svg>
+                </button>
+                <button id="play-pause-btn" class="player-button play-pause" title="Reproduzir">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                </button>
+                <button id="next-btn" class="player-button" title="Próxima">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/>
+                    </svg>
+                </button>
+                <button id="repeat-btn" class="player-button" title="Repetir" data-mode="off">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <polyline points="17 1 21 5 17 9" stroke-width="2"/>
+                        <path d="M3 11V9a4 4 0 0 1 4-4h14" stroke-width="2"/>
+                        <polyline points="7 23 3 19 7 15" stroke-width="2"/>
+                        <path d="M21 13v2a4 4 0 0 1-4 4H3" stroke-width="2"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="player-progress">
+                <span class="player-current-time">0:00</span>
+                <div class="progress-bar">
+                    <div class="progress-bar-fill"></div>
                 </div>
-
-                <div class="flex-1 px-8">
-                    <div class="flex items-center justify-center gap-4">
-                        <button id="prev-btn" class="p-2">⏮</button>
-                        <button id="play-btn" class="p-2 bg-white text-black rounded-full w-12 h-12 flex items-center justify-center">▶</button>
-                        <button id="next-btn" class="p-2">⏭</button>
-                        <button id="shuffle-btn" class="p-2" title="Shuffle">🔀</button>
-                        <button id="repeat-btn" class="p-2" title="Repeat">🔁</button>
-                    </div>
-                    <div class="mt-2">
-                        <input id="progress" type="range" min="0" max="100" value="0" class="w-full">
-                    </div>
-                </div>
-
-                <div class="flex items-center gap-4">
-                    <span id="current-time" class="text-xs text-gray-400">0:00</span>
-                    <input id="volume" type="range" min="0" max="1" step="0.01" value="0.8" class="w-24">
+                <span class="player-duration">0:00</span>
+            </div>
+        </div>
+        <div class="player-extra">
+            <div class="volume-control">
+                <button id="volume-btn" class="player-button" title="Volume">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+                    </svg>
+                </button>
+                <div class="volume-slider">
+                    <div class="volume-slider-fill"></div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="../js/player.js"></script>
+    <script type="module" src="/js/player.js"></script>
 </body>
 </html>
+

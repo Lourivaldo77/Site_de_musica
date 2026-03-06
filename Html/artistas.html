@@ -175,7 +175,7 @@
     </div>
 
     <script type="module">
-        import { ARTISTS, TRACKS } from '/js/data.js';
+        import { ARTISTS, TRACKS, getArtistPageUrl } from '/js/data.js';
         import { player } from '/js/player.js';
 
         // Render artists
@@ -183,18 +183,7 @@
         if (artistsContainer) {
             artistsContainer.innerHTML = ARTISTS.map(artist => {
                 const artistTracks = TRACKS.filter(t => t.artist === artist.name);
-                let artistSlug = artist.name.toLowerCase().replace(/\s+/g, '_');
-                let artistLink = `/Html/artista_${artistSlug}.html`;
-
-                // Condição especial para Ariana Grande, caso o nome do ficheiro seja diferente
-                if (artist.name === 'Ariana Grande') {
-                    artistLink = '/Html/ariana_grande.html';
-                }
-
-                // Condição especial para Lil Tecca
-                if (artist.name === 'Lil Tecca') {
-                    artistLink = '/Html/lil_tecca.html';
-                }
+                const artistLink = getArtistPageUrl(artist.name);
 
                 return `
                     <a href="${artistLink}" class="artist-card" data-artist-id="${artist.id}">

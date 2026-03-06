@@ -2,6 +2,28 @@
  * Dados dos artistas e músicas
  */
 
+// Mapeamento de artistas para seus arquivos HTML correspondentes
+const ARTIST_PAGES = {
+  'drake': '/Html/artista_drake.html',
+  'ariana grande': '/Html/ariana_grande.html',
+  'billie eilish': '/Html/artista_billie_eilish.html',
+  'central cee': '/Html/artista_central_cee.html',
+  'travis scott': '/Html/artista_travis_scott.html',
+  'kendrick lamar': '/Html/artista_kendrick_lamar.html',
+  'post malone': '/Html/artista_post_malone.html',
+  'dua lipa': '/Html/artista_dua_lipa.html',
+  'ed sheeran': '/Html/artista_ed_sheeran.html',
+  'rihanna': '/Html/artista_rihanna.html',
+  'imagine dragons': '/Html/artista_imagine_dragons.html',
+  'lil tecca': '/Html/Lil_Tecca.html',
+  'kelson most wanted': '/Html/artista_kelson_most_wanted.html'
+};
+
+export function getArtistPageUrl(artistName) {
+  const nameLower = artistName.toLowerCase();
+  return ARTIST_PAGES[nameLower] || '/Html/artistas.html';
+}
+
 export const ARTISTS = [
   {
     id: 'kelson',

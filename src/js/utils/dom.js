@@ -71,23 +71,33 @@ export async function loadComponent(path) {
     return await response.text();
   } catch (error) {
     console.error(`Erro ao carregar componente [${path}]:`, error);
-    return '';
+    // Re-lança o erro para que o chamador possa tratá-lo
+    throw error;
   }
 }
 
 /**
  * Injeta HTML em elementos com data-include
+ * e carrega o CSS correspondente por convenção.
+ * Ex: /Html/components/nav.html -> /css/nav.css
  * @param {string} attribute - Atributo data-* a procurar (ex: 'nav')
  * @param {string} componentPath - Caminho do componente
  */
 export async function includeComponent(attribute, componentPath) {
   const elements = document.querySelectorAll(`[data-include="${attribute}"]`);
   if (elements.length === 0) return;
-  
-  const html = await loadComponent(componentPath);
-  elements.forEach(el => {
-    el.innerHTML = html;
-  });
+
+  const componentName = componentPath.split('/').pop().replace('.html', '');
+  const cssPath = `/css/${componentName}.css`;
+
+  try {
+    const [html] = await Promise.all([loadComponent(componentPath), loadCSS(cssPath)]);
+    elements.forEach(el => {
+      el.innerHTML = html;
+    });
+  } catch (error) {
+    console.error(`Erro ao incluir componente [${attribute}] com CSS:`, error);
+  }
 }
 
 /**
@@ -111,4 +121,3 @@ export function loadCSS(href) {
     document.head.appendChild(link);
   });
 }
-

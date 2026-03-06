@@ -3,7 +3,7 @@
  */
 
 import { player } from './player.js';
-import { ARTISTS, TRACKS, PLAYLISTS } from './data.js';
+import { ARTISTS, TRACKS, PLAYLISTS, getArtistPageUrl } from './data.js';
 
 class App {
   constructor() {
@@ -147,22 +147,25 @@ class App {
     const container = document.getElementById('featured-artists');
     if (!container) return;
 
-    container.innerHTML = ARTISTS.slice(0, 6).map(artist => `
-      <div class="music-card" data-artist-id="${artist.id}">
-        <img src="${artist.image}" alt="${artist.name}" class="music-card-image">
-        <div class="music-card-overlay">
-          <button class="play-button">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M8 5v14l11-7z"/>
-            </svg>
-          </button>
-        </div>
-        <div class="music-card-info">
-          <div class="music-card-title">${artist.name}</div>
-          <div class="music-card-artist">${artist.genre}</div>
-        </div>
-      </div>
-    `).join('');
+    container.innerHTML = ARTISTS.slice(0, 6).map(artist => {
+      const artistLink = getArtistPageUrl(artist.name);
+      return `
+        <a href="${artistLink}" class="music-card" data-artist-id="${artist.id}">
+          <img src="${artist.image}" alt="${artist.name}" class="music-card-image">
+          <div class="music-card-overlay">
+            <button class="play-button">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </button>
+          </div>
+          <div class="music-card-info">
+            <div class="music-card-title">${artist.name}</div>
+            <div class="music-card-artist">${artist.genre}</div>
+          </div>
+        </a>
+      `;
+    }).join('');
   }
 
   renderRecentlyPlayed() {
